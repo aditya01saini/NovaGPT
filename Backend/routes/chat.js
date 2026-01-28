@@ -7,8 +7,8 @@ import getOpenAIAPIResponse from "../utils/openai.js";
 router.post("/test", async (req, res) => {
   try {
     const thread = new Thread({
-      threadId:"zxczxcv",
-      title: "nrtgervvvvththg",
+      threadId:"zxczxcvjhjhjhg",
+      title: "nrtgervvvjhvtjhghthg",
     });
 
     const response = await thread.save();
@@ -72,7 +72,7 @@ router.post("/chat", async (req, res) => {
   }
 
   try {
-    const thread = await Thread.findOne({ threadId });
+    let thread = await Thread.findOne({ threadId });
     if (!thread) {
       //create new thread
 
