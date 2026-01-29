@@ -13,6 +13,7 @@ export default function App() {
   const [prevChats, setPrevChats] = useState([]);//store all chats of current threads
   const[newChat, setNewChat] = useState(true);
   const [allThreads, setAllThreads] = useState([]);
+  // const [logIn ,setLogIn] = useState(false)
 
 
   const providerValues = {
