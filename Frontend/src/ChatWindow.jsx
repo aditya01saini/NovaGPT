@@ -4,6 +4,7 @@ import { useContext, useState, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { SyncLoader } from "react-spinners";
 const API_URL = import.meta.env.VITE_API_URL;
+console.log("API_URL:", API_URL);
 
 
 function ChatWindow() {
