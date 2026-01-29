@@ -23,7 +23,7 @@ The project demonstrates how AI-powered applications can be built, deployed, and
 - 🧠 Context-aware AI conversations  
 - 🔒 Secure backend API (API key protected on server-side)  
 - 📦 MongoDB used for data persistence  
-- 🚀 Fully deployed and production-ready  
+- 🚀 Fully deployed 
 
 ---
 
