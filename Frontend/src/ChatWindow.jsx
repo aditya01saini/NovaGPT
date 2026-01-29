@@ -3,6 +3,7 @@ import Chat from "./Chat.jsx";
 import { useContext, useState, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { SyncLoader } from "react-spinners";
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 function ChatWindow() {
@@ -24,6 +25,7 @@ function ChatWindow() {
 
 
 
+
   const getReply = async () => {
     setLoading(true);
     setNewChat(false);
@@ -41,7 +43,7 @@ function ChatWindow() {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch(`${API_URL}/api/chat`, options);
       const res = await response.json();
       console.log(res);
       setReply(res.reply);
