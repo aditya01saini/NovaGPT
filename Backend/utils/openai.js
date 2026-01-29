@@ -21,7 +21,6 @@ const getOpenAIAPIResponse = async (message) => {
           content: message,
         },
       ],
-      max_tokens: 200,
     }),
   };
 
