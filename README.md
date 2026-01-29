@@ -4,7 +4,7 @@
 **Nova GPT** is a full-stack AI chat application inspired by ChatGPT, built using the **MERN stack** and powered by the **Groq LLM API**.  
 It delivers ultra-fast, real-time AI responses through a clean user interface and a scalable backend architecture.
 
-🚀 **Live Demo:** nova-gpt-five.vercel.app
+🚀 **Live Demo:** https://nova-gpt-five.vercel.app/
 
 ---
 
