@@ -2,6 +2,7 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext";
 import { v1 as uuidv1 } from "uuid";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Sidebar() {
   const {
@@ -17,7 +18,7 @@ function Sidebar() {
 
   const getAllThreads = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/thread");
+      const response = await fetch(`${API_URL}/api/thread`);
       const res = await response.json();
       const filteredData = res.map((thread) => ({
         threadId: thread.threadId,
