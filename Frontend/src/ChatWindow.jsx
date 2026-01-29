@@ -4,6 +4,7 @@ import { useContext, useState, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { SyncLoader } from "react-spinners";
 
+
 function ChatWindow() {
   const {
     prompt,
@@ -19,6 +20,9 @@ function ChatWindow() {
 
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [logIn, setLogIn] = useState(false);
+
+
 
   const getReply = async () => {
     setLoading(true);
@@ -71,6 +75,11 @@ function ChatWindow() {
     setIsOpen(!isOpen);
   }
 
+
+  const userLogIn = () => {
+      
+  }
+
   return (
     <div className="chatWindow">
       <div className="navbar">
@@ -88,7 +97,9 @@ function ChatWindow() {
         <div className="dropDown">
           <div className="dropDownItems"><i class="fa-solid fa-arrow-up-right-from-square"></i>Upgrade Plan</div>
           <div className="dropDownItems"><i class="fa-solid fa-gear"></i>Setting</div>
-          <div className="dropDownItems"><i class="fa-solid fa-right-from-bracket"></i>Log out</div>
+          <div className="dropDownItems" onClick={() => {
+            userLogIn()
+          }}><i class="fa-solid fa-right-from-bracket"></i>Log In</div>
         </div>
       )}
 
