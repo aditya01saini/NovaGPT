@@ -3,6 +3,8 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext";
 import { v1 as uuidv1 } from "uuid";
 const API_URL = import.meta.env.VITE_API_URL;
+import NovaLogo from "./assets/Nova.png";
+
 
 function Sidebar() {
   const {
@@ -79,7 +81,7 @@ function Sidebar() {
   return (
     <section className="sidebar">
       <button onClick={createNewChat}>
-        <img src="src/assets/Nova.png" alt="gpt logo" className="logo" />
+<img src={NovaLogo} alt="gpt logo" className="logo" />
         <span>
           <i className="fa-solid fa-pen-to-square"></i>
         </span>
